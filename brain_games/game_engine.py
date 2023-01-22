@@ -30,5 +30,5 @@ def logic_of_brain_games(game):
             return print(lose_game)
         else:
             print(correct_result)
-    
+
     return print(you_win)
