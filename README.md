@@ -20,7 +20,7 @@ make package-install
 
 
 ### How to play:
-insert the commands:
+input the commands:
 
 brain-even 
 
