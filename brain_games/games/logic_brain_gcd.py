@@ -3,14 +3,14 @@ import math
 
 
 def start_game():
-    return print('Find the greatest common divisor of given numbers.')
+    print('Find the greatest common divisor of given numbers.')
 
 
 def get_question_and_correct_answer():
 
-    first_number = random.choice(range(30))
-    second_number = random.choice(range(30))
-    question = f'{first_number} {second_number}'
-    correct_answer = str(math.gcd(first_number, second_number))
+    FIRST_NUMBER = random.choice(range(30))
+    SECOND_NUMBER = random.choice(range(30))
+    question = f'{FIRST_NUMBER} {SECOND_NUMBER}'
+    correct_answer = str(math.gcd(FIRST_NUMBER, SECOND_NUMBER))
 
     return question, correct_answer

@@ -2,17 +2,15 @@ import random
 
 
 def start_game():
-    start_game = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-    return print(start_game)
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def get_question_and_correct_answer():
-    question = random.randint(2, 100)
+    QUESTION_OF_GAME = random.randint(2, 100)
     i = 2
-    while question % i != 0:
+    while QUESTION_OF_GAME % i != 0:
         i += 1
 
-    correct_answer = i == question and 'yes' or 'no'
+    correct_answer = i == QUESTION_OF_GAME and 'yes' or 'no'
 
-    return question, correct_answer
+    return QUESTION_OF_GAME, correct_answer
