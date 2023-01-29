@@ -1,8 +1,10 @@
 import random
 
 
-MIN = 0
-MAX = 20
+MIN1 = 0
+MAX1 = 20
+MIN2 = 5
+MAX2 = 10
 STEP_MIN = 1
 STEP_MAX = 10
 
@@ -12,9 +14,9 @@ MESSAGE = 'What number is missing in the progression?'
 def get_question_and_correct_answer():
 
     list_of_progression = []
-    FIRST_NUMBER = random.randint(MIN, MAX)
+    FIRST_NUMBER = random.randint(MIN1, MAX1)
     STEP_OF_PROGRESSION = random.randint(STEP_MIN, STEP_MAX)
-    LENGHT_OF_PROGRESSION = random.randint(MIN, MAX)
+    LENGHT_OF_PROGRESSION = random.randint(MIN2, MAX2)
 
     for _ in range(LENGHT_OF_PROGRESSION):
         FIRST_NUMBER += STEP_OF_PROGRESSION
