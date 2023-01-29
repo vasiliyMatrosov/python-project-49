@@ -1,16 +1,20 @@
 import random
 
 
-def start_game():
-    print('What number is missing in the progression?')
+MIN = 0
+MAX = 20
+STEP_MIN = 1
+STEP_MAX = 10
+
+MESSAGE = 'What number is missing in the progression?'
 
 
 def get_question_and_correct_answer():
 
     list_of_progression = []
-    FIRST_NUMBER = random.randint(0, 20)
-    STEP_OF_PROGRESSION = random.randint(1, 10)
-    LENGHT_OF_PROGRESSION = random.randint(5, 10)
+    FIRST_NUMBER = random.randint(MIN, MAX)
+    STEP_OF_PROGRESSION = random.randint(STEP_MIN, STEP_MAX)
+    LENGHT_OF_PROGRESSION = random.randint(MIN, MAX)
 
     for _ in range(LENGHT_OF_PROGRESSION):
         FIRST_NUMBER += STEP_OF_PROGRESSION

@@ -1,12 +1,13 @@
 import random
 
+MIN = 0
+MAX = 50
 
-def start_game():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def get_question_and_correct_answer():
-    QUESTION_OF_GAME = random.randint(2, 100)
+    QUESTION_OF_GAME = random.randint(MIN, MAX)
     i = 2
     while QUESTION_OF_GAME % i != 0:
         i += 1
