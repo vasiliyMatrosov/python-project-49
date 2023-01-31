@@ -9,11 +9,11 @@ MESSAGE = 'What is the result of the expression?'
 
 def get_question_and_correct_answer():
 
-    FIRST_NUMBER = random.choice(range(MIN, MAX))
-    OPERATOR_OF_CALC = random.choice(['+', '-', '*'])
-    SECOND_NUMBER = random.choice(range(MIN, MAX))
+    first_number = random.choice(range(MIN, MAX))
+    operator_of_calc = random.choice(['+', '-', '*'])
+    second_number = random.choice(range(MIN, MAX))
 
-    question = f'{FIRST_NUMBER} {OPERATOR_OF_CALC} {SECOND_NUMBER}'
+    question = f'{first_number} {operator_of_calc} {second_number}'
     correct_answer = str(eval(question))
 
     return question, correct_answer
