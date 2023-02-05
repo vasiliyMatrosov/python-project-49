@@ -1,38 +1,53 @@
-### Hexlet tests and linter status:
+# Hexlet tests and linter status:
 [![Actions Status](https://github.com/vasiliyMatrosov/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/vasiliyMatrosov/python-project-49/actions)
 
 
-### Maintainability:
+# Maintainability:
 <a href="https://codeclimate.com/github/vasiliyMatrosov/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/23e227cf802a425168e0/maintainability" /></a>
 
+# Description
+Project containing 5 mini-games, each game is started by commands.
 
-### For the correct operation of the games you will need: Python v3.6 and higher, Poetry v1.2.0 and higher
 
+***
+
+## For the correct operation of the games you will need: Python v3.6 and higher, Poetry v1.2.0 and higher
+
+
+
+***
 
 ### How to install: 
 Git clone https://github.com/vasiliyMatrosov/python-project-49
 
-make setup
+make install - to install poetry packages.
+make build - to build your packages inside your project.
+make publish - It will let us execute the publish command knowing exactly what is going into the build.
+make package - install installs the built package from our OS, so we can start using simple shell commands.
 
-make build
-
-make package-install
-
+test your application by adding brain-games to the command line
 
 ### How to play:
 input the commands:
 
-brain-even 
+'''brain-even'''
+(The essence of the game is as follows: the user is shown a random number. And he needs to answer yes if the number is even, or no if it is odd.)
 
-crain-calc
+'''crain-calc''''
+(The essence of the game is as follows: the user is shown a random mathematical expression, for example 35 + 16, which must be calculated and the correct answer written down.)
 
-brain-gcd
+'''brain-gcd'''
+(The essence of the game is as follows: the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.)
 
-brain-progression
+'''brain-progression'''
+(Show the player a series of numbers that form an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
+The recommended progression length is 10 numbers. The length can be randomly generated, but must contain at least 5 numbers!
+The position of the hidden element changes each time (selected randomly.))
 
-brain-prime
+'''brain-prime'''
+(The user is shown numbers and needs to determine if the number is prime. If the number is prime, the user must enter yes, if not, then no.)
 
-
+***
 
 Example Brain-even:
 <a href="https://asciinema.org/a/Lf2QKhkX4a4PAof1sBd5ZW3QO" target="_blank"><img src="https://asciinema.org/a/Lf2QKhkX4a4PAof1sBd5ZW3QO.svg" /></a>
