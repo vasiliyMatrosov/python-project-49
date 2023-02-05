@@ -9,7 +9,7 @@
 Project containing 5 mini-games, each game is started by commands.
 
 <div id="header2" align="center">
-<img src="https://giphy.com/embed/zOvBKUUEERdNm"</a></p>
+  <img src="https://en.wikiversity.org/wiki/Python#/media/File:Python.svg"/>
 </div>
 
 
