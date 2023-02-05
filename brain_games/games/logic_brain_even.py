@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 MIN = 0
 MAX = 100
@@ -6,9 +6,13 @@ MAX = 100
 MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
+def get_parity_check(number):
+    return number % 2 == 0 and 'yes' or 'no'
+
+
 def get_question_and_correct_answer():
 
-    QUESTION_OF_GAME = random.randint(MIN, MAX)
-    correct_answer = QUESTION_OF_GAME % 2 == 0 and 'yes' or 'no'
+    question_of_game = randint(MIN, MAX)
+    correct_answer = get_parity_check(question_of_game)
 
-    return QUESTION_OF_GAME, correct_answer
+    return question_of_game, correct_answer

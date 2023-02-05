@@ -1,4 +1,5 @@
-import random
+from random import randint
+from random import choice
 
 MIN = 0
 MAX = 100
@@ -7,13 +8,21 @@ MAX = 100
 MESSAGE = 'What is the result of the expression?'
 
 
+def get_calc(first_num, second_num, operator):
+    if operator == '+':
+        return first_num + second_num
+    if operator == '-':
+        return first_num - second_num
+    if operator == '*':
+        return first_num * second_num
+
+
 def get_question_and_correct_answer():
+    operator = ('+', '-', '*')
+    first_num = randint(MIN, MAX)
+    second_num = randint(MIN, MAX)
+    operator = choice(operator)
+    correct_answer: int | str = get_calc(first_num, second_num, operator)
+    question = f'{first_num} {operator} {second_num}'
 
-    first_number = random.choice(range(MIN, MAX))
-    operator_of_calc = random.choice(['+', '-', '*'])
-    second_number = random.choice(range(MIN, MAX))
-
-    question = f'{first_number} {operator_of_calc} {second_number}'
-    correct_answer = str(eval(question))
-
-    return question, correct_answer
+    return question, str(correct_answer)

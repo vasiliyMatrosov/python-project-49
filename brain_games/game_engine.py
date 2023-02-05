@@ -1,10 +1,10 @@
-from brain_games.cli import welcome_user
 import prompt
 
 
-def logic_of_brain_games(game):
-
-    name = welcome_user()
+def get_logic_of_brain_games(game):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     print(game.MESSAGE)
     you_win = f'Congratulations, {name}!'
     correct_result = 'Correct!'
