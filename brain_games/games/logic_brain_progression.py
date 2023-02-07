@@ -11,7 +11,7 @@ STEP_MAX = 10
 MESSAGE = 'What number is missing in the progression?'
 
 
-def get_progression():
+def is_progression():
     step_of_progression = randint(STEP_MIN, STEP_MAX)
     lenght_of_progression = randint(MIN_OF_LENGHT_OF_PROGRESSION,
                                     MAX_OF_LENGHT_OF_PROGRESSION)
@@ -27,7 +27,7 @@ def get_progression():
 
 
 def get_question_and_correct_answer():
-    question = get_progression()
+    question = is_progression()
     correct_answer = choice(question)
     index = question.index(correct_answer)
     question[index] = '..'

@@ -6,7 +6,7 @@ MAX = 50
 MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_prime(number):
+def is_prime(number):
     i = 2
     while number % i != 0:
         i += 1
@@ -15,7 +15,7 @@ def get_prime(number):
 
 def get_question_and_correct_answer():
     number = randint(MIN, MAX)
-    if get_prime(number):
+    if is_prime(number):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'

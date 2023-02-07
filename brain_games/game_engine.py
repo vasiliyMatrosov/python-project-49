@@ -1,7 +1,7 @@
 import prompt
 
 
-def get_logic_of_brain_games(game):
+def is_logic_of_brain_games(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
